@@ -35,9 +35,10 @@ export const baseApi = createApi({
             query: ({searchQuery, endCursor, repNumber}) => ({
                 url: '',
                 method: "POST",
+                // ввести git токен
                 headers: {
                     'Content-Type': 'application/json',
-                    'Authorization': 'Bearer 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'
+                    'Authorization': 'Bearer '
                 },
                 body: JSON.stringify({
                     query:`
